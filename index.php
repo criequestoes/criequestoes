@@ -8,7 +8,7 @@ $app->config('debug', true);
 
 
 $app->get('/', function() {  
-	echo "Pronto para comecar";
+	echo "Configurando o GitHub";
 });
 
 
