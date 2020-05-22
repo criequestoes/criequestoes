@@ -8,7 +8,13 @@ $app->config('debug', true);
 
 
 $app->get('/', function() {  
-	echo "Configurando o GitHub";
+	
+	$sql = new cq\DB\Sql();
+
+	$results = $sql->select("SELECT * FROM tb_openquestion");
+
+	echo json_encode($results);
+
 });
 
 
