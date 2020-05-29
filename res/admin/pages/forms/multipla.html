@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crie Questões</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
+  
+  
+
+  <script src="../../ckeditor/plugins/ckeditor_wiris/integration/WIRISplugins.js?viewer=image"> </script>
+  
+
+  <script type="text/javascript" src="../../../ckeditor/ckeditor.js"></script>
+  
+</head>
+<!--<body class="hold-transition sidebar-mini">-->
+<body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="../../index3.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-3">
+          <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-navbar" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../../index3.html" class="brand-link">
+          <img src="../../dist/img/AdminLTELogo.png"
+               alt="AdminLTE Logo"
+               class="brand-image img-circle elevation-3"
+               style="opacity: .8">
+          <span class="brand-text font-weight-light"> Olá Professor! </span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Sidney Santiago</a>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Visualize sua conta
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>BQ Completo</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Seu BQ</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../../index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Financeiro </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+                   
+              <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>
+                    Bora trabalhar...
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                
+                  <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Criar uma questão</p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle nav-icon"></i>
+                              <p>Discursiva</p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Simples</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Composta</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Exata</p>
+                                </a>
+                              </li>
+                            </ul>
+
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle nav-icon"></i>
+                              <p>Multipla escolha</p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Interrogativa</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Argumentativa</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Respostas múltiplas</p>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  <i class="far fa-dot-circle nav-icon"></i>
+                                  <p>Asserção</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <i class="fas fa-circle nav-icon"></i>
+                              <p>Dicotômica (V/F)</p>
+                            </a>
+                          </li>
+                        </ul>  
+                  
+
+                      </li>
+                      <li class="nav-item">
+                        <a href="../forms/advanced.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Adaptar uma questão</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../forms/editors.html" class="nav-link"> <!--active">-->
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Digitar uma questão</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../forms/validation.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Corrigir uma questão</p>
+                        </a>
+                      </li>
+                  </ul>    
+              </li>
+              
+              <li class="nav-header">ORIENTAÇÕES</li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-danger"></i>
+                  <p class="text">DISCURSIVA</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-warning"></i>
+                  <p>MÚLTIPLA ESCOLHA</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-info"></i>
+                  <p>DICOTÔMICA</p>
+                </a>
+              </li>
+            </ul>  
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- TÍTULO : CRIANDO UMA QUESTÃO -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Criando uma questão...</h1>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </section>
+        <!-- Parâmetros gerais da questão -->
+        <section class="content">
+
+          <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-default">
+              <div class="card-header">
+                <h3 class="card-title"> Direcionando o conteúdo</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Estágio</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Ensino Fundamenta I</option>
+                        <option>Ensino Fundamental II</option>
+                        <option>Ensino Médio</option>
+                        <option>Outro</option>
+                      </select>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                       <label>Assunto</label>
+                      <select class="select2" multiple="multiple" data-placeholder="Qual frente da disciplina?" style="width: 100%;">
+                        <option>Álgebra</option>
+                        <option>Geometria</option>
+                        <option>Análise de Dados</option>              
+                      </select>
+                    </div>
+                    <!-- /.form-group -->
+                  </div>
+                  
+
+                  <!-- /.col -->
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Área Conhecimento</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Linguagens</option>
+                        <option>Humanas</option>
+                        <option>Natureza</option>
+                        <option>Matemática</option>
+                      </select>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="form-group">
+                       <label>Tópico</label>
+                      <select class="select2" multiple="multiple" data-placeholder="Qual tópico do assunto?" style="width: 100%;">
+                        <option>Geometria plana</option>
+                        <option>Geometria espacial</option>
+                        <option>Geometria analítica</option>              
+                      </select>
+                    </div>
+                    </div>
+                    <!-- /.form-group -->
+
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Disciplina</label>
+                      <select class="select2" multiple="multiple" data-placeholder="Qual(as) disciplina(as)?" style="width: 100%;">
+                        <option>Matemática</option>
+                        <option>Física</option>
+                        <option>Química</option>
+                        <option>Biologia</option>
+                      </select>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                      <div class="form-group">
+                       <label>Abrangência</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option>Simples</option>
+                        <option>Interdisciplinar</option>
+                        <option>Multidisciplinar</option>              
+                      </select>
+                    </div>
+                    </div>
+                    <!-- /.form-group -->
+                  
+                  </div>
+                  <!-- /.col -->
+                </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </section>
+        <!-- CONTEXTO-->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-outline card-info">
+                <div class="card-header">
+                  <h3 class="card-title">
+                    Crie o contexto
+                    <small>... onde a questão se aplica?</small>
+                  </h3>
+                  <!-- tools box -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
+                            title="Collapse">
+                      <i class="fas fa-minus"></i></button>
+                    
+                  </div>
+                  <!-- /. tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body pad">
+                  <div class="mb-3">
+                    
+                    <textarea id="editor1" name="desproduct">&lt;p&gt;Valor inicial.&lt;/p&gt;</textarea>
+                    <!--<textarea class="textarea" placeholder="Place some text here"
+                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>-->
+                  <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- ./row -->
+        </section>
+        <!-- SUPORTE -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-outline card-info">
+                <div class="card-header">
+                  <h3 class="card-title">
+                    Crie o suporte
+                    <small>...elementos de apoio: gráficos, textos e outros ... </small>
+                  </h3>
+                  <!-- tools box -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
+                            title="Collapse">
+                      <i class="fas fa-minus"></i></button>
+                    
+                  </div>
+                  <!-- /. tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body pad">
+                  <div class="mb-3">
+                    <textarea class="textarea" placeholder="Place some text here"
+                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- ./row -->
+        </section>
+        <!-- COMANDO-->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-outline card-info">
+                <div class="card-header">
+                  <h3 class="card-title">
+                    Crie o comando
+                    <small>...seja claro e objetivo ... </small>
+                  </h3>
+                  <!-- tools box -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
+                            title="Collapse">
+                      <i class="fas fa-minus"></i></button>
+                    
+                  </div>
+                  <!-- /. tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body pad">
+                  <div class="mb-3">
+                    <textarea class="textarea" placeholder="Place some text here"
+                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                                
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- ./row -->
+        </section>
+        <!-- ALTERNATIVAS - RESOLUÇÃO -->
+        <section class="content">
+          <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-warning">
+                  <div class="card-header">
+                    <h3 class="card-title">Aternativas</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
+                                title="Collapse">
+                          <i class="fas fa-minus"></i>
+                        </button>  
+                    </div>
+                  </div>
+
+                  <!-- PRIMEIRA ALTERNATIVA:CORRETA -->
+                  <div class="card-body">
+                    <form role="form">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- textarea -->
+                          <div class="form-group">
+                            <label>Alternativa Correta</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Resolução</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- SEGUNDA ALTERNATIVA: ERRADA  -->
+                  <div class="card-body">
+                    <form role="form">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- textarea -->
+                          <div class="form-group">
+                            <label>PRIMEIRA alternativa Errada</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Distrator</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- TERCEIRA ALTERNATIVA: ERRADA  -->
+                  <div class="card-body">
+                    <form role="form">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- textarea -->
+                          <div class="form-group">
+                            <label>SEGUNDA alternativa Errada</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Distrator</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--QUARTA ALTERNATIVA: ERRADA  -->
+                  <div class="card-body">
+                    <form role="form">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- textarea -->
+                          <div class="form-group">
+                            <label>TERCEIRA alternativa Errada</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Distrator</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                 <!--QUINTA ALTERNATIVA: ERRADA  -->
+                  <div class="card-body">
+                    <form role="form">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- textarea -->
+                          <div class="form-group">
+                            <label>QUARTA alternativa Errada</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Distrator</label>
+                            <textarea class="textarea" placeholder="Place some text here"
+                                  style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">                         
+                            </textarea>  
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+            </div>
+
+        </section>
+
+
+      </div>
+      
+
+
+      <!-- Rodapé -->
+      <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+          <b>Version</b> 1.0
+        </div>
+        <strong>Copyright &copy; 2020 <a>criequestões.com</a>.</strong> All rights
+        reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Summernote -->
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+    <script>
+      $(function () {
+        // Summernote
+        $('.textarea').summernote()
+      })
+    </script>
+
+
+    <script>
+      $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+          theme: 'bootstrap4'
+        })
+
+      })
+    </script>
+
+    <!--<script type="text/javascript">
+          window.onload = function()  {
+            CKEDITOR.replace( 'editor1' )
+          };
+    </script>-->
+
+  <script>
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor1');
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea").wysihtml5();
+  });
+  </script>
+  <script>
+  var genericIntegrationProperties = {};
+  genericIntegrationProperties.target = document.getElementById('htmlEditor');
+  genericIntegrationProperties.toolbar = document.getElementById('toolbar');
+ 
+  // We just added this line:
+  genericIntegrationProperties.configurationService = '../../res/integration/configurationjs.php';
+ 
+  // GenericIntegration instance.
+  var genericIntegrationInstance = new WirisPlugin.GenericIntegration(genericIntegrationProperties);
+  genericIntegrationInstance.init();
+  genericIntegrationInstance.listeners.fire('onTargetReady', {});
+  </script>
+
+
+</body>
+</html>
